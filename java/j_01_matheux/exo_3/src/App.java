@@ -28,16 +28,13 @@ public class App {
         b = sc.nextLine();
         c = sc.nextLine();
 
-        int number1 = Integer.parseInt(a);
-        int number2 = Integer.parseInt(b);
-        int number3 = Integer.parseInt(c);
-
-        if ((number1 < number2) && (number2 < number3)) {
+        if (a.compareTo(b) < 0 && b.compareTo(c) < 0) {
 
             System.out.println("Ces noms sont classés alphabétiquement");
         } else {
 
             System.out.println("Ces noms ne sont pas classés");
         }
+        sc.close();
     }
 }
